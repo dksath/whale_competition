@@ -1,4 +1,4 @@
-##Whale & Dolphin Identification
+## Whale & Dolphin Identification
 
 Fingerprints and facial recognition are used to identify people in our world and we could use similar approaches with animals. Researchers today manually track marine life by the shape and markings on their tails, dorsal fins, heads and other body parts. Identification by natural markings via photographs, known as a Photo\_ID, is a powerful tool for marine mammal science. It allows individual animals to be tracked over time and enables assessments of population status and trends.
 
