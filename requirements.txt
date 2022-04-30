@@ -1,0 +1,20 @@
+# Data Manipulation
+numpy
+pandas
+
+# Working with Directories
+tqdm
+joblib
+
+# Data Visualisation
+matplotlib
+plotly
+Pillow
+
+# Dataset
+sklearn
+bbox-utility
+opencv-python
+
+# Model
+tensorflow
