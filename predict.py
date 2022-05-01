@@ -6,12 +6,8 @@ import pandas as pd
 import os
 from glob import glob
 from tqdm import tqdm
-
-# These library are for Visualization
-import matplotlib.pyplot as plt
-import plotly.express as px
-from PIL import Image
 import argparse
+
 # These library are for the Dataset
 from sklearn.model_selection import train_test_split
 from datetime import datetime
@@ -28,8 +24,7 @@ import sys
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-
-def main():
+if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description="Cleaning preprocessed data.")
     parser.add_argument(
@@ -44,17 +39,16 @@ def main():
         help="The path to the model chosen. Default: `Saved_models/model.h5`.",
     )
 
-    
+
     START_DATETIME = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     opt = parser.parse_args()
 
-
-    img = image.load(opt.image_path,target_size=(32, 32, 3))
+    img = image.load(opt.image_path, target_size=(32, 32, 3))
     X = image.img_to_array(img)
     X = preprocess_input(X)
     model = keras.models.load_model(opt.model_path)
     model.summary()
     
-    pridictions=model.predict(np.array(X), verbose=1)
-    print(pridictions)
+    predictions=model.predict(np.array(X), verbose=1)
+    print(predictions)
     
